@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bask by Coffee? | Artisanal Cafe & Bistro in Teynampet, Chennai</title>
+  <meta name="description" content="Bask by Coffee? - Premier specialty coffee house & gourmand bistro in Teynampet, Chennai. 4.4 ★ (1,985 reviews). Tuscan sandwiches, Mont Blanc Cold Brew, Churros & spacious outdoor seating.">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>☕</text></svg>">
+</head>
+<body>
+
+  <!-- Top Announcement Bar -->
+  <div class="top-notice">
+    <span id="live-status-pill"><span class="pulse-dot"></span> Open Now (Closes 11 PM)</span>
+    <span>•</span>
+    <span>11/6, Kasturi Rangan Rd, Teynampet, Chennai</span>
+    <span>•</span>
+    <span style="color: var(--text-muted); font-size: 0.8rem;">💡 Gandhi Jayanti / Holiday hours may vary</span>
+  </div>
+
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="brand-container">
+      <div class="brand-logo">
+        <a href="#" class="brand-name">Bask <span>by Coffee?</span></a>
+        <span class="brand-sub">Artisan Cafe & Bistro</span>
+      </div>
+      <div class="rating-pill">
+        <span>★ 4.4</span>
+        <span style="opacity: 0.7; font-weight: normal;">(1,985)</span>
+      </div>
+    </div>
+
+    <nav class="nav-links">
+      <a href="#overview" class="active">Overview</a>
+      <a href="#menu">Menu & Highlights</a>
+      <a href="#vibe">Popular Times</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#location">Hours & Location</a>
+    </nav>
+
+    <div class="header-actions">
+      <button class="btn btn-secondary" onclick="copyInfo('07397410133', 'Phone Number')">
+        <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+        07397 410 133
+      </button>
+      <button class="btn btn-primary" id="book-table-btn">Book a Table</button>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero-section" id="overview">
+    <div class="hero-content">
+      <div class="hero-tag">
+        <span>✨ Teynampet's Premier Coffee Sanctuary</span>
+      </div>
+      <h1 class="hero-title">Bask in the Craft of <em>Fine Coffee</em> & Gourmet Comforts</h1>
+      <p class="hero-desc">
+        Experience Chennai's beloved specialty cafe featuring signature Mont Blanc cold brews, golden churros, Tuscan chicken sandwiches, and vibrant Asian bistro favorites in a sunlit indoor & garden atmosphere.
+      </p>
+
+      <div class="hero-meta-grid">
+        <div class="meta-box">
+          <h4>₹400–1,200</h4>
+          <p>Avg. Per Person</p>
+        </div>
+        <div class="meta-box">
+          <h4>4.4 ★</h4>
+          <p>1,985 Verified Reviews</p>
+        </div>
+        <div class="meta-box">
+          <h4>Indoor & Garden</h4>
+          <p>Spacious Seating</p>
+        </div>
+      </div>
+
+      <div class="hero-btn-group">
+        <a href="#menu" class="btn btn-primary">
+          <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"></path></svg>
+          Explore Menu
+        </a>
+        <button class="btn btn-secondary" onclick="openOrderModal()">
+          🛒 Order Online
+        </button>
+        <a href="https://www.swiggy.com/restaurants/bask-by-coffee-teynampet-mylapore-chennai-789332/dineout" target="_blank" class="btn btn-outline">
+          Find a Table via Swiggy
+        </a>
+      </div>
+    </div>
+
+    <div class="hero-image-wrapper">
+      <img src="assets/hero_cafe.jpg" alt="Bask by Coffee Chennai Ambiance">
+      <div class="hero-badge-overlay">
+        <div class="info">
+          <strong>Bask by Coffee?</strong>
+          <span>11/6, Kasturi Rangan Rd, Kasturi Estate, Teynampet</span>
+        </div>
+        <div class="rating-pill">
+          <span>LGBTQ+ Friendly</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Strip -->
+  <div class="features-strip">
+    <div class="strip-container">
+      <div class="feature-item">
+        <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"></path></svg>
+        <span>Dine-In & Terrace</span>
+      </div>
+      <div class="feature-item">
+        <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"></path></svg>
+        <span>Kerbside Pickup</span>
+      </div>
+      <div class="feature-item">
+        <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"></path></svg>
+        <span>Doorstep Delivery</span>
+      </div>
+      <div class="feature-item">
+        <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"></path></svg>
+        <span>Fast & Warm Service</span>
+      </div>
+      <div class="feature-item">
+        <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"></path></svg>
+        <span>LGBTQ+ Welcoming Space</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Menu Section -->
+  <section class="section" id="menu">
+    <div class="section-header">
+      <span class="tag">Curated Gastronomy</span>
+      <h2>Menu & House Highlights</h2>
+      <p>Handcrafted espresso beverages, wood-fired bites, Asian dumplings, and artisanal desserts.</p>
+    </div>
+
+    <div class="menu-controls">
+      <div class="search-box">
+        <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"></circle><path d="m21 21-4.3-4.3"></path></svg>
+        <input type="text" id="menu-search-input" placeholder="Search dishes (e.g. Churros, Cold Brew, Dumplings, Sandwich)...">
+      </div>
+
+      <div class="menu-tabs">
+        <button class="tab-btn active" data-category="all">All Items</button>
+        <button class="tab-btn" data-category="popular">Popular Hits 🔥</button>
+        <button class="tab-btn" data-category="coffee">Artisan Coffee ☕</button>
+        <button class="tab-btn" data-category="sandwiches">Sandwiches & Starters 🥪</button>
+        <button class="tab-btn" data-category="asian">Asian Gourmet 🥟</button>
+        <button class="tab-btn" data-category="desserts">Desserts & Pastries 🍰</button>
+      </div>
+    </div>
+
+    <!-- Dynamic Menu Grid -->
+    <div class="menu-grid" id="menu-grid-container">
+      <!-- Injected by JS -->
+    </div>
+
+    <!-- Drive Menu Link Banner -->
+    <div class="menu-drive-banner">
+      <div>
+        <h3>Want to view our complete full menu document?</h3>
+        <p>Browse our exhaustive list of seasonal specials, cold brews, and mocktails on Google Drive.</p>
+      </div>
+      <a href="https://drive.google.com/file/d/1iNBDeTm9w1RxiHHS9nKfWReo4VhCHuPJ/view?usp=drive_link" target="_blank" class="btn btn-secondary">
+        📄 Download PDF Menu
+      </a>
+    </div>
+  </section>
+
+  <!-- Popular Times & Vibe -->
+  <section class="vibe-section section" id="vibe">
+    <div class="section-header">
+      <span class="tag">Cafe Pulse & Ambiance</span>
+      <h2>Popular Times & Daily Vibe</h2>
+      <p>Check live crowd density to pick your perfect time for work, coffee dates, or gatherings.</p>
+    </div>
+
+    <div class="vibe-grid">
+      <div class="busy-widget">
+        <div class="busy-header">
+          <div>
+            <h3>Fridays Crowd Status</h3>
+            <span style="font-size: 0.85rem; color: var(--text-muted);">Updated live based on visitor traffic</span>
+          </div>
+          <span class="live-status-tag">⚡ Live: A Little Busy</span>
+        </div>
+
+        <div class="chart-bar-container">
+          <div class="bar-col">
+            <div class="bar-fill" style="height: 25%;"></div>
+            <span>6a</span>
+          </div>
+          <div class="bar-col">
+            <div class="bar-fill" style="height: 50%;"></div>
+            <span>9a</span>
+          </div>
+          <div class="bar-col">
+            <div class="bar-fill active" style="height: 75%;"></div>
+            <span>12p</span>
+          </div>
+          <div class="bar-col">
+            <div class="bar-fill" style="height: 60%;"></div>
+            <span>3p</span>
+          </div>
+          <div class="bar-col">
+            <div class="bar-fill active" style="height: 85%;"></div>
+            <span>6p</span>
+          </div>
+          <div class="bar-col">
+            <div class="bar-fill" style="height: 95%;"></div>
+            <span>9p</span>
+          </div>
+        </div>
+      </div>
+
+      <div style="display: flex; flex-direction: column; gap: 20px;">
+        <div class="review-card" style="background: var(--bg-card); border-color: var(--border-light);">
+          <h3 class="serif" style="color: var(--accent-gold); font-size: 1.5rem;">The Bask Experience</h3>
+          <p style="color: var(--text-muted); font-size: 0.95rem;">
+            Whether you choose our cozy indoor lounge with ambient jazz or our lush garden terrace wrapped in warm string lighting, Bask by Coffee? offers a tranquil retreat in the heart of Teynampet.
+          </p>
+          <div style="display: flex; gap: 12px; margin-top: 10px;">
+            <a href="https://instagram.com/bask.bycoffee" target="_blank" class="btn btn-secondary" style="font-size: 0.85rem;">
+              📸 Follow @bask.bycoffee
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Reviews Section -->
+  <section class="section" id="reviews">
+    <div class="section-header">
+      <span class="tag">Community Voice</span>
+      <h2>Customer Reviews & Feedback</h2>
+      <p>Over 1,985 coffee enthusiasts and food lovers share their experiences.</p>
+    </div>
+
+    <!-- Rating Stats -->
+    <div class="review-stats-card">
+      <div class="overall-score">
+        <div class="score-num">4.4</div>
+        <div class="stars">★★★★☆</div>
+        <div class="total-count">1,985 Google Reviews</div>
+      </div>
+
+      <div class="rating-bars">
+        <div class="rating-row">
+          <span>5 ★</span>
+          <div class="row-bar-bg"><div class="row-bar-fill" style="width: 72%;"></div></div>
+        </div>
+        <div class="rating-row">
+          <span>4 ★</span>
+          <div class="row-bar-bg"><div class="row-bar-fill" style="width: 18%;"></div></div>
+        </div>
+        <div class="rating-row">
+          <span>3 ★</span>
+          <div class="row-bar-bg"><div class="row-bar-fill" style="width: 6%;"></div></div>
+        </div>
+        <div class="rating-row">
+          <span>2 ★</span>
+          <div class="row-bar-bg"><div class="row-bar-fill" style="width: 2%;"></div></div>
+        </div>
+        <div class="rating-row">
+          <span>1 ★</span>
+          <div class="row-bar-bg"><div class="row-bar-fill" style="width: 2%;"></div></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Gemini AI Summary Box -->
+    <div class="gemini-summary-box">
+      <svg class="sparkle-icon" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2L14.5 9.5L22 12L14.5 14.5L12 22L9.5 14.5L2 12L9.5 9.5L12 2Z"/></svg>
+      <div>
+        <p><strong>Gemini Review AI Summary:</strong> People say this cafe offers a wide variety of delicious food, including flavorful Indian cuisine, artisan pizzas, and excellent coffee & desserts. Visitors highlight the cozy, spacious ambiance with indoor and outdoor seating, fast service, and friendly staff.</p>
+      </div>
+    </div>
+
+    <!-- Filter Tag Chips -->
+    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; flex-wrap: wrap; gap: 16px;">
+      <div class="review-tags">
+        <button class="review-tag-chip active" data-tag="all">All Reviews</button>
+        <button class="review-tag-chip" data-tag="Churros">Churros (25)</button>
+        <button class="review-tag-chip" data-tag="outdoor seating">Outdoor Seating (46)</button>
+        <button class="review-tag-chip" data-tag="chilli chicken">Chilli Chicken (12)</button>
+        <button class="review-tag-chip" data-tag="spacious seating">Spacious Seating (3)</button>
+        <button class="review-tag-chip" data-tag="Tuscan Chicken">Tuscan Chicken</button>
+      </div>
+
+      <button class="btn btn-outline" id="write-review-btn">+ Write a Review</button>
+    </div>
+
+    <!-- Reviews Grid -->
+    <div class="reviews-grid" id="reviews-grid-container">
+      <!-- Injected by JS -->
+    </div>
+  </section>
+
+  <!-- Location & Hours Section -->
+  <section class="section" id="location">
+    <div class="section-header">
+      <span class="tag">Visit Us</span>
+      <h2>Location & Operating Hours</h2>
+      <p>Conveniently located in Kasturi Estate, Teynampet, Chennai.</p>
+    </div>
+
+    <div class="location-grid">
+      <div class="location-info-card">
+        <div class="info-block">
+          <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"></path><circle cx="12" cy="9" r="2.5"></circle></svg>
+          <div>
+            <h4>Address</h4>
+            <p>11/6, Kasturi Rangan Rd, Kasturi Estate, Teynampet, Chennai, Tamil Nadu 600086</p>
+            <p style="font-size: 0.8rem; color: var(--accent-gold); margin-top: 4px;">Plus Code: 27V4+3G Chennai, Tamil Nadu</p>
+          </div>
+        </div>
+
+        <div class="info-block">
+          <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+          <div>
+            <h4>Operating Hours</h4>
+            <p><strong>Everyday:</strong> 8:00 AM – 11:00 PM</p>
+            <p style="font-size: 0.8rem; color: var(--text-dim); margin-top: 2px;">Note: Holiday / Gandhi Jayanti might affect these hours.</p>
+          </div>
+        </div>
+
+        <div class="info-block">
+          <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+          <div>
+            <h4>Phone & Contact</h4>
+            <p>07397 410 133</p>
+          </div>
+        </div>
+
+        <div style="display: flex; gap: 12px; margin-top: 10px;">
+          <a href="https://maps.google.com/?q=Bask+by+Coffee+Teynampet+Chennai" target="_blank" class="btn btn-primary">
+            📍 Get Directions
+          </a>
+          <button class="btn btn-secondary" onclick="copyInfo('11/6, Kasturi Rangan Rd, Kasturi Estate, Teynampet, Chennai, Tamil Nadu 600086', 'Address')">
+            📋 Copy Address
+          </button>
+        </div>
+      </div>
+
+      <!-- Embedded Google Map -->
+      <div class="map-wrapper">
+        <iframe 
+          src="https://maps.google.com/maps?q=11/6,%20Kasturi%20Rangan%20Rd,%20Kasturi%20Estate,%20Teynampet,%20Chennai,%20Tamil%20Nadu%20600086&t=&z=16&ie=UTF8&iwloc=&output=embed" 
+          allowfullscreen="" 
+          loading="lazy">
+        </iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-container">
+      <div class="footer-brand">
+        <a href="#" class="brand-name">Bask <span>by Coffee?</span></a>
+        <p>Chennai's premier artisanal coffee sanctuary and gourmand bistro. Crafting unforgettable coffee moments, delicious bites, and cozy memories.</p>
+      </div>
+
+      <div class="footer-links">
+        <h4>Navigation</h4>
+        <ul>
+          <li><a href="#overview">Overview</a></li>
+          <li><a href="#menu">Full Menu</a></li>
+          <li><a href="#vibe">Popular Times</a></li>
+          <li><a href="#reviews">Reviews</a></li>
+          <li><a href="#location">Directions</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-links">
+        <h4>Connect</h4>
+        <ul>
+          <li><a href="https://instagram.com/bask.bycoffee" target="_blank">Instagram (@bask.bycoffee)</a></li>
+          <li><a href="https://www.swiggy.com/restaurants/bask-by-coffee-teynampet-mylapore-chennai-789332/dineout" target="_blank">Swiggy Dineout</a></li>
+          <li><a href="tel:07397410133">Call 07397 410 133</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-links">
+        <h4>Amenities</h4>
+        <p style="font-size: 0.85rem; color: var(--text-muted); line-height: 1.6;">
+          • LGBTQ+ Friendly<br>
+          • Indoor & Outdoor Terrace<br>
+          • Kerbside Pickup & Delivery<br>
+          • High-Speed Wi-Fi & Workspaces
+        </p>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2026 Bask by Coffee? Teynampet, Chennai. All rights reserved.</p>
+      <p>Designed with ❤️ for fine coffee lovers in Chennai.</p>
+    </div>
+  </footer>
+
+  <!-- Table Booking Modal -->
+  <div class="modal-overlay" id="booking-modal">
+    <div class="modal-container">
+      <button class="modal-close" id="close-booking-modal">&times;</button>
+      <div class="modal-header">
+        <h3>Reserve a Table</h3>
+        <p>Book your spot at Bask by Coffee? Teynampet or via Swiggy Dineout.</p>
+      </div>
+      <form id="booking-form">
+        <div class="form-group">
+          <label>Full Name</label>
+          <input type="text" required placeholder="e.g. Ananya Sharma">
+        </div>
+        <div class="form-group">
+          <label>Phone Number</label>
+          <input type="tel" required placeholder="e.g. 9876543210">
+        </div>
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 12px;">
+          <div class="form-group">
+            <label>Date</label>
+            <input type="date" required>
+          </div>
+          <div class="form-group">
+            <label>Time</label>
+            <input type="time" required value="17:00">
+          </div>
+        </div>
+        <div class="form-group">
+          <label>Number of Guests</label>
+          <select required>
+            <option value="2">2 Guests</option>
+            <option value="3">3 Guests</option>
+            <option value="4">4 Guests</option>
+            <option value="5">5+ Guests</option>
+          </select>
+        </div>
+        <div style="display: flex; gap: 10px; margin-top: 20px;">
+          <button type="submit" class="btn btn-primary" style="flex:1;">Confirm Reservation</button>
+          <a href="https://www.swiggy.com/restaurants/bask-by-coffee-teynampet-mylapore-chennai-789332/dineout" target="_blank" class="btn btn-outline">Swiggy Dineout</a>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- Order Online Modal -->
+  <div class="modal-overlay" id="order-modal">
+    <div class="modal-container">
+      <button class="modal-close" onclick="closeOrderModal()">&times;</button>
+      <div class="modal-header">
+        <h3>Order Online</h3>
+        <p>Choose your preferred delivery or pickup option.</p>
+        <div id="selected-item-label" style="color: var(--accent-gold); font-weight: 600; font-size: 0.9rem;"></div>
+      </div>
+      <div style="display: flex; flex-direction: column; gap: 14px; margin-top: 20px;">
+        <a href="https://www.google.com/searchviewer/42?cvd=CLw_EicKJeICIjIgEhkiF9LX29IPEQoNL2cvMTFzdm1wMXQ2bRgAOgMI8A0%3D" target="_blank" class="btn btn-primary" style="justify-content: flex-start; padding: 16px 24px;">
+          🛵 Order Online via Direct Order Partner
+        </a>
+        <a href="https://www.swiggy.com/restaurants/bask-by-coffee-teynampet-mylapore-chennai-789332" target="_blank" class="btn btn-secondary" style="justify-content: flex-start; padding: 16px 24px;">
+          📦 Order on Swiggy Delivery
+        </a>
+        <button class="btn btn-outline" onclick="closeOrderModal(); showToast('Kerbside Pickup initialized! Call 07397 410 133 upon arrival.');">
+          🚗 Request Kerbside Pickup
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Write Review Modal -->
+  <div class="modal-overlay" id="review-modal">
+    <div class="modal-container">
+      <button class="modal-close" id="close-review-modal">&times;</button>
+      <div class="modal-header">
+        <h3>Write a Review</h3>
+        <p>Share your coffee & dining experience at Bask by Coffee?</p>
+      </div>
+      <form id="review-form">
+        <div class="form-group">
+          <label>Your Name</label>
+          <input type="text" id="rev-name" required placeholder="e.g. Wasim F.">
+        </div>
+        <div class="form-group">
+          <label>Rating</label>
+          <select id="rev-rating" required>
+            <option value="5">★★★★★ (5/5 Excellent)</option>
+            <option value="4">★★★★☆ (4/5 Good)</option>
+            <option value="3">★★★☆☆ (3/5 Average)</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>Your Review</label>
+          <textarea id="rev-text" rows="4" required placeholder="Tell us about the coffee, food, ambiance, or service..."></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary" style="width:100%; margin-top: 10px;">Publish Review</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Toast Container -->
+  <div class="toast-container" id="toast-container"></div>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
